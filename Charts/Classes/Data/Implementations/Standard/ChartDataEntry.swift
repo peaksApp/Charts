@@ -14,6 +14,10 @@
 
 import Foundation
 
+protocol Chippable {
+    var isChipped: Bool { get set }
+}
+
 public class ChartDataEntry: NSObject
 {
     /// the actual value (y axis)

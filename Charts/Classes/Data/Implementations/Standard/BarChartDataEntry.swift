@@ -13,8 +13,11 @@
 
 import Foundation
 
-public class BarChartDataEntry: ChartDataEntry
+public class BarChartDataEntry: ChartDataEntry, Chippable
 {
+    /// when set to true the bars appear with "chipped top left corner"
+    public var isChipped: Bool = false
+    
     /// the values the stacked barchart holds
     private var _values: [Double]?
     
